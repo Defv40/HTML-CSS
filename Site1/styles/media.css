@@ -1,0 +1,30 @@
+@media (max-width: 1050px) {
+    .img{
+        width: 90%;
+    }
+    .header-nav{
+        display: none;
+    }
+    .menuicon{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .language{
+        display: none;
+    }
+    .Denis_Novik .description{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: 110px;
+        
+    }
+    .Denis_Novik .description h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 800px) {
+    
+}

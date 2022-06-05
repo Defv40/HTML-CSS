@@ -1,0 +1,150 @@
+
+/* special */
+.section-container{
+    max-width: 943px;
+    margin: 0 auto;
+}
+
+.link{
+    transition: all, 0.3s;
+    position: relative;
+}
+.link:hover::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #070707;
+    position: absolute;
+    z-index: 99999;
+    top: 120%;
+    left: 0;
+}
+.menuicon{
+    display: none;
+}
+.menutoogle{
+    position: absolute;
+    top: 18px;
+    right: 23px;
+    height: 26px;
+    width: 26px;
+    opacity: 0;
+}
+.menutoogle:checked + .menu{
+    display: block;
+}
+
+.menu{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 40px;
+    left: 0;
+    display: none;
+     z-index: 99999;
+    position: relative;
+   
+}
+.menu > ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.languageInner{
+    transform: rotateZ(90deg);
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+/* section Denis_Novik */
+.Denis_Novik .section-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0 0 104px;
+}
+
+.Denis_Novik .description{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+    align-items: flex-end;
+    margin-bottom: 49px;
+}
+
+.Denis_Novik .description > h1{
+    font-size: 47px;
+}
+
+.Denis_Novik .description > p:last-child{
+    transform: rotateZ(-90deg);
+    margin-right: -30px; 
+}
+/* section about me */
+.about_me{
+    background: #F6F6F6;
+    padding: 107px 20px 120px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+/* section skills */
+
+.Skills .section-container{
+    padding: 91px 0 110px;
+    align-items: center;
+    text-align: center;
+}
+.Skills .title{
+    font-size: 34px;
+}
+.Skills .programs{
+    padding: 69px 0 83px;
+}
+.Skills .tools{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* section portfolio */
+.portfolio{
+    background: #F6F6F6;
+}
+
+.portfolio .section-container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 112px 0 96px;
+}
+.portfolio .cards{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 99px;
+}
+.portfolio .card{
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.portfolio .card img{
+   margin-bottom: 44px;
+}
+
+.portfolio .title{
+    padding: 0 0 47px 0;
+    font-size: 34px;
+}
